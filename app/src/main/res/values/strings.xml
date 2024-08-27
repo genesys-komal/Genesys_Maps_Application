@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Genesys Map Application</string>
+    <!--    <string name="map_style_dark" translatable="false">http://api.genesysmap.com/api/v1/tiles/styles/streets/style.json?api_key=4FBC5BFE7E34C58F414519B43972C</string>-->
+    <string name="map_style_dark" translatable="false">http://api.genesysmap.com/api/v1/tiles-pan-india/styles/streets/style.json?api_key=4FBC5BFE7E34C58F414519B43972C</string>
+
+    <style name="CustomToolbarOverflowButton" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:background">#FFFFFF</item> <!-- White background for overflow button -->
+        <item name="android:tint">#000000</item> <!-- Black tint for overflow icon -->
+    </style>
+</resources>
