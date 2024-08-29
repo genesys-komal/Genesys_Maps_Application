@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/map_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Map Styles" />
+
+    <ImageView
+        android:id="@+id/close_style"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_close" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_below="@+id/map_style"
+    android:id="@+id/styleView"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="70dp"
+            android:id="@+id/default_view"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/default_view"
+            android:layout_height="70dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Default"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="70dp"
+            android:id="@+id/satellite_view"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/setellite"
+            android:layout_height="70dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Satellite"
+            android:layout_margin="10dp"
+           android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/map_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/styleView"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Map Styles" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_below="@+id/map_details"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="70dp"
+            android:id="@+id/traffic"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="20dp"
+            android:fitsSystemWindows="true"
+            android:layout_gravity="center"
+            android:src="@drawable/traffic"
+            android:layout_height="70dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Traffic"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:id="@+id/threeDLyt"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="70dp"
+            android:id="@+id/other"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/setellite"
+            android:layout_height="70dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="3D"
+            android:layout_margin="10dp"
+           android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</RelativeLayout>

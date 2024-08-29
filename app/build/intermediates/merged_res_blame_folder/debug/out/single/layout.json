@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/add_new_address.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/add_new_address.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/activity_base.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/activity_base.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/activity_splash.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/navigation_activity.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/navigation_activity.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/map_style_layout.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/map_style_layout.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/activity_route.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/activity_route.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/maneuvers_item.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/maneuvers_item.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/turn_navigation_activity.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/turn_navigation_activity.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/category_item.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/category_item.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/bottom_sheet_distance.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/bottom_sheet_distance.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/activity_find.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/activity_find.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/item_search_suggestion.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/item_search_suggestion.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/layout_maneuvers.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/layout_maneuvers.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/item_waypoint.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/item_waypoint.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/activity_isochrone.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/activity_isochrone.xml"
+    },
+    {
+        "merged": "com.example.mapapplication.app-mergeDebugResources-42:/layout/custom_alert_dialog.xml",
+        "source": "com.example.mapapplication.app-main-45:/layout/custom_alert_dialog.xml"
+    }
+]

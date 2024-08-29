@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.mapapplication.app-mergeDebugResources-41:/values-he/values-he.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\1feb1b8c9c176205e7b6f2b8cada717b\\transformed\\libandroid-navigation-3.0.0\\res\\values-he\\values-he.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,109,163",
+                        "endColumns": "53,53,69",
+                        "endOffsets": "104,158,228"
+                    },
+                    "to": {
+                        "startLines": "2,6,15",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,310,1254",
+                        "endColumns": "53,53,69",
+                        "endOffsets": "104,359,1319"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\a77dcf2eb46f96d221bd6871d018c8cf\\transformed\\libandroid-navigation-ui-3.0.0\\res\\values-he\\values-he.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,118,180,256,299,343,400,457",
+                        "endColumns": "62,61,75,42,43,56,56,44",
+                        "endOffsets": "113,175,251,294,338,395,452,497"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,14,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "109,172,234,1211,1324,1368,1425,1482",
+                        "endColumns": "62,61,75,42,43,56,56,44",
+                        "endOffsets": "167,229,305,1249,1363,1420,1477,1522"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\b618a462fc5950240a5a772a36f2325e\\transformed\\android-sdk-10.2.0\\res\\values-he\\values-he.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,179,270,388,493,647,763",
+                        "endColumns": "123,90,117,104,153,115,138",
+                        "endOffsets": "174,265,383,488,642,758,897"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "364,488,579,697,802,956,1072",
+                        "endColumns": "123,90,117,104,153,115,138",
+                        "endOffsets": "483,574,692,797,951,1067,1206"
+                    }
+                }
+            ]
+        }
+    ]
+}

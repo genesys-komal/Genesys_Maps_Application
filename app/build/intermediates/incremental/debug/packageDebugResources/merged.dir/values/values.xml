@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blue">#060DF7</color>
+    <color name="dark_green">#1E5313</color>
+    <color name="green">#38E811</color>
+    <color name="grey">#93949D</color>
+    <color name="orange">#E84511</color>
+    <color name="pink">#F706EC</color>
+    <color name="red">#F73006</color>
+    <color name="transparent">#B9B5B9</color>
+    <color name="violet">#8C0B8A</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#F7C806</color>
+    <dimen name="margin_025">4dp</dimen>
+    <dimen name="margin_05">8dp</dimen>
+    <dimen name="margin_075">12dp</dimen>
+    <dimen name="margin_1">16dp</dimen>
+    <dimen name="margin_125">20dp</dimen>
+    <dimen name="margin_15">24dp</dimen>
+    <dimen name="margin_175">27dp</dimen>
+    <dimen name="margin_2">32dp</dimen>
+    <dimen name="margin_225">36dp</dimen>
+    <dimen name="margin_25">40dp</dimen>
+    <string name="app_name">Genesys Map Application</string>
+    <string name="map_style_dark" translatable="false">http://api.genesysmap.com/api/v1/tiles-pan-india/styles/streets/style.json?api_key=4FBC5BFE7E34C58F414519B43972C</string>
+    <style name="Base.Theme.GenesysMaps" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="CustomPopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">#FFFFFF</item>
+    </style>
+    <style name="CustomToolbarOverflowButton" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:background">#FFFFFF</item> 
+        <item name="android:tint">#000000</item> 
+    </style>
+    <style name="CustomToolbarStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="CustomToolbarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="colorAccent">#000000</item>
+    </style>
+    <style name="TestNavigationViewDark" parent="NavigationViewDark">
+        <item name="navigationViewMapStyle">@string/map_style_dark</item>
+    </style>
+    <style name="Theme.GenesysMaps" parent="Base.Theme.GenesysMaps"/>
+</resources>

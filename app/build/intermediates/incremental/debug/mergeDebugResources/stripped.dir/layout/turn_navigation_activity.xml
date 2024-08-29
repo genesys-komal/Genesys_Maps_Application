@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    tools:context=".navigation.TurnNavigationActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/CustomToolbarTheme"
+        android:popupTheme="@style/Widget.AppCompat.ActionButton.Overflow" />
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainContainer"
+        android:layout_above="@id/bottomView"
+        app:maplibre_cameraZoom="12"
+        app:maplibre_enableTilePrefetch="true"
+        app:maplibre_enableZMediaOverlay="true"
+        app:maplibre_renderTextureMode="true"
+        app:maplibre_renderTextureTranslucentSurface="true"
+        app:maplibre_uiAttribution="false"
+        app:maplibre_uiCompass="false"
+        app:maplibre_uiDoubleTapGestures="true"
+        app:maplibre_uiLogo="false"
+        app:maplibre_uiRotateGestures="true"
+        app:maplibre_uiScrollGestures="true"
+        app:maplibre_uiTiltGestures="true"
+        app:maplibre_uiZoomGestures="true" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_075"
+            android:background="@drawable/background_map_search"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/margin_05"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_search_suggestion"
+            tools:visibility="gone" />
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+    <LinearLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<ImageView
+    android:layout_width="30dp"
+    android:id="@+id/clearPoints"
+    android:src="@drawable/baseline_arrow_back_24"
+    android:padding="5dp"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="30dp"/>
+        <LinearLayout
+            android:id="@+id/container_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/container_search"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rounded_blue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="horizontal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/originAutocomplete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_075"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="Write starting point"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:text="Your Location"
+                        android:textColor="@color/maplibre_blue"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/originPoint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_05"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="Write starting point"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:text="Your Location"
+                        android:textColor="@color/maplibre_blue"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/clearOrigin"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginHorizontal="5dp"
+                        app:srcCompat="@drawable/baseline_settings_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_way_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_map_search"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/margin_05"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_search"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_waypoint"
+                tools:visibility="visible" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/dots_three_vertical"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@color/grey"
+                    android:layout_height="1dp"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/shuffle"
+                    android:src="@drawable/baseline_height_24"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gps_icon" />
+
+                <LinearLayout
+                    android:id="@+id/container_nav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/destinationAutocomplete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_075"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="Write destination point"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/maplibre_blue"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/destinationPoint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_05"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="Write destination point"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/maplibre_blue"
+                        android:textColorHint="@color/grey"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/clearDestination"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginHorizontal="5dp"
+                        android:baselineAligned="false"
+                        app:srcCompat="@drawable/ic_close" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingVertical="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/walkLayout"
+                android:paddingVertical="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:contentDescription="@string/app_name"
+                    android:layout_gravity="center"
+                    android:src="@drawable/walk" />
+
+                <TextView
+                    android:id="@+id/walkTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="34 min"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/bicycleLayout"
+                android:paddingVertical="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bycicle" />
+
+                <TextView
+                    android:id="@+id/bikeTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="34 min"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/carLayout"
+                android:paddingVertical="5dp"
+                android:background="@drawable/rounded_blue"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_directions_car_24" />
+
+                <TextView
+                    android:id="@+id/carTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="34 min"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/busLayout"
+                android:layout_weight="1"
+                android:paddingVertical="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_directions_bus_24" />
+
+                <TextView
+                    android:id="@+id/busTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="34 min"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/truckLayout"
+                android:layout_weight="1"
+                android:paddingVertical="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/baseline_fire_truck_24" />
+
+                <TextView
+                    android:id="@+id/truckTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="34 min"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/startRouteLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/startRouteButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send"
+            android:text="Start route"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/clearPoints"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="16dp"-->
+    <!--        android:src="@drawable/ic_delete"-->
+    <!--        android:tint="@android:color/white"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:backgroundTint="@android:color/holo_red_light"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        tools:visibility="visible" />-->
+
+    <LinearLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignBottom="@id/mapView"
+        android:layout_above="@+id/bottomView"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_styles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/rounded_blue"
+            android:elevation="6dp"
+            android:foregroundGravity="right"
+            android:visibility="visible"
+            app:backgroundTint="@color/maplibre_blue"
+            app:borderWidth="0dp"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/baseline_layers_24"
+            app:tint="@color/white" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_recenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/rounded_blue"
+            android:elevation="6dp"
+            android:layout_marginVertical="15dp"
+            android:layout_gravity="bottom|right"
+            app:backgroundTint="@color/maplibre_blue"
+            app:borderWidth="0dp"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/baseline_gps_fixed_24"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/legendContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:background="#AAFFFFFF"
+            android:linksClickable="true"
+            android:orientation="vertical"
+            android:padding="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/optimalRoute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_blue"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:layout_below="@+id/timeLyt"
+                android:textColor="@color/black"
+                android:paddingVertical="10dp"
+                android:drawablePadding="3dp"
+                android:paddingHorizontal="15dp"
+                android:drawableTint="@color/transparent"
+                android:layout_marginTop="5dp"
+                android:text="Optimal" />
+            <TextView
+                android:id="@+id/shortestRoute"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_search"
+                android:gravity="center"
+                android:layout_below="@+id/timeLyt"
+                android:textColor="@color/black"
+                android:paddingVertical="10dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:drawablePadding="3dp"
+                android:paddingHorizontal="15dp"
+                android:drawableTint="@color/transparent"
+                android:layout_marginTop="5dp"
+                android:text="Shortest" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/timeLyt"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/transparent_circle"
+                        android:src="@drawable/baseline_access_time_24"
+                        android:layout_height="@dimen/_20sdp"/>
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:text="28 min"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+            </LinearLayout>
+                <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                    android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:rotation="90"
+                        android:background="@drawable/transparent_circle"
+                        android:src="@drawable/baseline_height_24"
+                        android:layout_height="@dimen/_20sdp"/>
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_gravity="center"
+                        android:text="28 km"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/addWayPoint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Add WayPoint"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:background="@drawable/background_search"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/startRouteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_blue"
+                android:gravity="center"
+                android:layout_below="@+id/timeLyt"
+                android:textColor="@color/black"
+                android:paddingVertical="10dp"
+                android:drawablePadding="3dp"
+                android:paddingHorizontal="15dp"
+                android:drawableTint="@color/transparent"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_navigation"
+                android:text="Start" />
+
+            <TextView
+                android:id="@+id/maneuversbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_search"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_below="@+id/timeLyt"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toRightOf="@id/startRouteButton"
+                android:textColor="@color/black"
+                android:paddingVertical="10dp"
+                android:drawablePadding="3dp"
+                android:paddingHorizontal="15dp"
+                android:drawableTint="@color/transparent"
+                android:layout_marginTop="5dp"
+                android:text=" maneuvers" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
