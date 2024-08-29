@@ -40,13 +40,20 @@ import com.mapbox.geojson.Point
 import com.mapbox.mapboxsdk.camera.CameraPosition
 import com.mapbox.mapboxsdk.camera.CameraUpdateFactory
 import com.mapbox.mapboxsdk.geometry.LatLng
+import com.mapbox.mapboxsdk.geometry.LatLngBounds
 import com.mapbox.mapboxsdk.location.permissions.PermissionsListener
 import com.mapbox.mapboxsdk.location.permissions.PermissionsManager
+import com.mapbox.mapboxsdk.maps.MapView
 import com.mapbox.mapboxsdk.maps.MapboxMap
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback
 import com.mapbox.mapboxsdk.maps.Style
 import com.mapbox.mapboxsdk.plugins.annotation.LineManager
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolManager
+import com.mapbox.mapboxsdk.style.expressions.Expression
+import com.mapbox.mapboxsdk.style.expressions.Expression.get
+import com.mapbox.mapboxsdk.style.expressions.Expression.match
+import com.mapbox.mapboxsdk.style.expressions.Expression.stop
+import com.mapbox.mapboxsdk.style.expressions.Expression.zoom
 import com.mapbox.mapboxsdk.style.layers.FillExtrusionLayer
 import com.mapbox.mapboxsdk.style.layers.Layer
 import com.mapbox.mapboxsdk.style.layers.LineLayer
@@ -60,6 +67,7 @@ import com.mapbox.mapboxsdk.style.sources.RasterDemSource
 import com.mapbox.mapboxsdk.style.sources.RasterSource
 import com.mapbox.mapboxsdk.style.sources.Source
 import com.mapbox.mapboxsdk.style.sources.VectorSource
+import com.mapbox.turf.TurfMeasurement.center
 import kotlinx.coroutines.launch
 import java.lang.System.setProperties
 import java.util.regex.Pattern
@@ -565,7 +573,7 @@ class MainActivity : BaseActivity(), OnMapReadyCallback {
         traffic.setOnClickListener {
             binding.mapView.getMapAsync { mapboxMap ->
                 mapboxMap.setStyle(geoHelper.tilesUrl) { style ->
-                    addCustomTileLayer1(style)
+//                    addCustomTileLayer1(style)
                 }
 
             }
@@ -647,6 +655,72 @@ class MainActivity : BaseActivity(), OnMapReadyCallback {
             true
         } catch (e: NumberFormatException) {
             false
+        }
+    }
+
+    fun toggleTrafficLayer(mapView: MapView, trafficLayerAdded: Boolean, TRAFFIC_TILES_URL: String, API_KEY: String) {
+
+        if (!trafficLayerAdded) {
+//            addTrafficLayer(map!!, TRAFFIC_TILES_URL, API_KEY)
+            val latLngList = listOf(LatLng(12.976654848114677, 77.6050138207973))
+            val latLngBounds = LatLngBounds.fromLatLngs(latLngList)
+            val cameraUpdate = CameraUpdateFactory.newLatLngBounds(latLngBounds, 200)
+            map?.easeCamera(cameraUpdate)
+//            showTrafficMenu(mapView.context as Activity)
+        } else {
+            removeTrafficLayer(map!!)
+//            hideTrafficMenu(mapView.context as Activity, mapView.findViewById(R.id.traffic_menu))
+        }
+    }
+
+//    private fun addTrafficLayer(mapboxMap: MapboxMap, TRAFFIC_TILES_URL: String, API_KEY: String) {
+//        val hour = java.util.Calendar.getInstance().get(java.util.Calendar.HOUR_OF_DAY)
+//        val tilesUrlTemplate = "$TRAFFIC_TILES_URL/$hour/{z}/{x}/{y}.pbf?api_key=$API_KEY"
+//
+//        map!!.setStyle(geoHelper.tilesUrl) {
+//            map!!.getStyle { style ->
+//                style.addSource(VectorSource("traffic", tilesUrlTemplate))
+//
+//                style.addLayer(
+//                    LineLayer("traffic-layer", "traffic").apply {
+//                        setProperties(
+//                            PropertyFactory.lineColor(
+//                                match(
+//                                    get(""),"",
+//                                    stop(20,""), stop(10,""), stop(5,"")
+//                                )
+//                               /* match(
+//                                    Expression.get("speed_raw"),
+//                                    Expression.stop(20, "#00FF00"),
+//                                    Expression.stop(10, "#FFFF00"),
+//                                    Expression.stop(5, "#FFA500"),
+//                                    "#FF0000"
+//                                )*/
+//                            ),
+//                            PropertyFactory.lineWidth(
+//                                Expression.match(
+//                                    Expression.get("road_class"),
+//                                    Expression.stop("tertiary", 5),
+//                                    Expression.stop("secondary", 5),
+//                                    Expression.stop("residential", 5),
+//                                    5
+//                                )
+//                            )
+//                        )
+//                    }
+//                )
+//            }
+//        }
+//    }
+
+    fun removeTrafficLayer(mapboxMap: MapboxMap) {
+        mapboxMap.getStyle { style ->
+            if (style.getLayer("traffic-layer") != null) {
+                style.removeLayer("traffic-layer")
+            }
+            if (style.getSource("traffic") != null) {
+                style.removeSource("traffic")
+            }
         }
     }
 

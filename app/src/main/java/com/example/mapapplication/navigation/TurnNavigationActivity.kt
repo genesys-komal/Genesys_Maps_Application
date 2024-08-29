@@ -105,16 +105,16 @@ import kotlin.math.ln
 
 class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
     private var openPopup: SymbolLayer? = null // Track the currently open popup
-    private  val DOTTED_POLYLINE_SOURCE_ID = "DOTTED_POLYLINE_SOURCE_ID"
-    private  val DOTTED_POLYLINE_LAYER_ID = "DOTTED_POLYLINE_LAYER_ID"
-    private  val DOTTED_POLYLINE_SOURCE_ID_NEW = "DOTTED_POLYLINE_SOURCE_ID_NEW"
-    private  val DOTTED_POLYLINE_LAYER_ID_NEW = "DOTTED_POLYLINE_LAYER_ID_NEW"
+    private val DOTTED_POLYLINE_SOURCE_ID = "DOTTED_POLYLINE_SOURCE_ID"
+    private val DOTTED_POLYLINE_LAYER_ID = "DOTTED_POLYLINE_LAYER_ID"
+    private val DOTTED_POLYLINE_SOURCE_ID_NEW = "DOTTED_POLYLINE_SOURCE_ID_NEW"
+    private val DOTTED_POLYLINE_LAYER_ID_NEW = "DOTTED_POLYLINE_LAYER_ID_NEW"
     private var map: MapboxMap? = null
     private lateinit var binding: TurnNavigationActivityBinding
     private val adapterWayPoint: WayPointAdapter by lazy { WayPointAdapter() }
     private val maneuverAdapter: ManeuverAdapter by lazy { ManeuverAdapter() }
     private lateinit var getResult: ActivityResultLauncher<Intent>
-    private lateinit var  viewModel: RouteViewModel
+    private lateinit var viewModel: RouteViewModel
     private var symbolManager: SymbolManager? = null
     private var lineManager: LineManager? = null
     private var routeResponse: RouteOsrmResponse? = null
@@ -147,7 +147,10 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             onCreate(savedInstanceState)
             getMapAsync(this@TurnNavigationActivity)
         }
-        viewModel = ViewModelProvider(this@TurnNavigationActivity, ViewModelProviderFactory(geoHelper)).get(RouteViewModel::class.java)
+        viewModel =
+            ViewModelProvider(this@TurnNavigationActivity, ViewModelProviderFactory(geoHelper)).get(
+                RouteViewModel::class.java
+            )
         setupObservers()
         costingOptions = CostingOptions(AutoCostingOptions())
 
@@ -174,7 +177,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             shortestRoute.background =
                 ContextCompat.getDrawable(this@TurnNavigationActivity, R.drawable.background_search)
             setCostingOption(costingModel, shortest)
-            viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+            viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
             getDirections()
 
         }
@@ -185,7 +188,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             optimalRoute.background =
                 ContextCompat.getDrawable(this@TurnNavigationActivity, R.drawable.background_search)
             setCostingOption(costingModel, shortest)
-            viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+            viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
             getDirections()
         }
 
@@ -203,10 +206,11 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
                 origin = tempPoint
 
                 // Update the wayList
-                wayList[wayList.size - 1] = RoutingWaypoint(lat = destination!!.latitude(), lon = destination!!.longitude())
+                wayList[wayList.size - 1] =
+                    RoutingWaypoint(lat = destination!!.latitude(), lon = destination!!.longitude())
                 wayList[0] = RoutingWaypoint(lat = origin!!.latitude(), lon = origin!!.longitude())
 
-                viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+                viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
                 getDirections()
             }
 
@@ -235,17 +239,17 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             try {
                 openOptionsMenu()
             } catch (e: Exception) {
-                showToast( e.message.toString())
+                showToast(e.message.toString())
             }
         }
         //to remove destination data
         clearDestination.setOnClickListener {
-            if (destinationPoint.text!= ""){
-            destinationPoint.text = ""
-            clearPolylines()
-            destination = null
-            bottomView.isVisible = false
-                wayList.removeAt(wayList.size-1)
+            if (destinationPoint.text != "") {
+                destinationPoint.text = ""
+                clearPolylines()
+                destination = null
+                bottomView.isVisible = false
+                wayList.removeAt(wayList.size - 1)
             }
         }
         //to clear all the data on the map
@@ -254,13 +258,13 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             startActivity(Intent(this@TurnNavigationActivity, MainActivity::class.java))
             finish()
         }
-//to plat route for pedistrian view click
+        //to plot route for pedestrian view click
         walkLayout.setOnClickListener {
             if (validate()) {
                 costingModel = CostingModel.pedestrian
                 costingOptions =
                     CostingOptions(pedestrian = PedestrianCostingOptions(shortest = shortest))
-                viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+                viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
                 getDirections()
                 walkLayout.background =
                     ContextCompat.getDrawable(this@TurnNavigationActivity, R.drawable.rounded_blue)
@@ -287,7 +291,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             if (validate()) {
                 costingModel = CostingModel.bus
                 costingOptions = CostingOptions(AutoCostingOptions(shortest = shortest))
-                viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+                viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
                 getDirections()
 
                 walkLayout.background = ContextCompat.getDrawable(
@@ -314,7 +318,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             if (validate()) {
                 costingModel = CostingModel.truck
                 costingOptions = CostingOptions(truck = TruckCostingOptions(shortest = shortest))
-                viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+                viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
                 getDirections()
                 walkLayout.background = ContextCompat.getDrawable(
                     this@TurnNavigationActivity,
@@ -341,7 +345,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
                 costingModel = CostingModel.bicycle
                 costingOptions =
                     CostingOptions(bicycle = BicycleCostingOptions(shortest = shortest))
-                viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+                viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
                 getDirections()
                 walkLayout.background = ContextCompat.getDrawable(
                     this@TurnNavigationActivity,
@@ -367,7 +371,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             if (validate()) {
                 costingModel = CostingModel.auto
                 costingOptions = CostingOptions(auto = AutoCostingOptions(shortest = shortest))
-                viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+                viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
                 getDirections()
                 walkLayout.background = ContextCompat.getDrawable(
                     this@TurnNavigationActivity,
@@ -397,7 +401,8 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
 //        }
         adapterWayPoint.setOnItemClicked { prediction ->
 
-            val wPoint = RoutingWaypoint(lat = prediction.point.latitude, lon = prediction.point.longitude)
+            val wPoint =
+                RoutingWaypoint(lat = prediction.point.latitude, lon = prediction.point.longitude)
             if (wayList.contains(wPoint)) {
 //                showToast("node deleted")
                 wayList.remove(wPoint)
@@ -422,7 +427,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             }
             adapterWayPoint.submitList(wayPoints)
             adapterWayPoint.notifyDataSetChanged()
-            viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+            viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
             getDirections()
         }
         adapterWayPoint.setOnTextClicked {
@@ -440,9 +445,9 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
         map.addOnMapClickListener { latLng ->
             AddNewAddressDialog(latLng)
 //            changeRoute(latLng)
-   /*         if (destination != null) {
+            /*         if (destination != null) {
 
-              *//*  Alert.alert {
+                       *//*  Alert.alert {
                     title = "Put point"
                     description = "Add as via point"
                     alertContext = this@TurnNavigationActivity
@@ -497,6 +502,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             true
         }
     }
+
     private fun setupObservers() {
         viewModel.routeOsrmResponse.observe(this) { result ->
             result?.let {
@@ -526,6 +532,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             }
         }
     }
+
     //on map click listener dialog
     private fun AddNewAddressDialog(latLng: LatLng) {
         // Inflate the custom layout
@@ -548,12 +555,13 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             place = Commons.origin
             getReverseGeocode(latLng)
             alertDialog.dismiss()
-            wayList[0] = RoutingWaypoint(lat = origin!!.latitude() , lon = origin!!.longitude())
+            wayList[0] = RoutingWaypoint(lat = origin!!.latitude(), lon = origin!!.longitude())
         }
         // Set up the direction to action
         directionTo.setOnClickListener {
             destination = latLng.toPoint()
-            wayList[wayList.size-1] = RoutingWaypoint(lat = destination!!.latitude() , lon = destination!!.longitude())
+            wayList[wayList.size - 1] =
+                RoutingWaypoint(lat = destination!!.latitude(), lon = destination!!.longitude())
             place = Commons.destination
             getReverseGeocode(latLng)
             alertDialog.dismiss()
@@ -595,6 +603,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
         // Show the dialog
         alertDialog.show()
     }
+
     private fun setMapStyle(style: String) {
         map?.setStyle(style) { style ->
             clearPolylines()
@@ -642,7 +651,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             val ss1 = intent.getStringExtra(Commons.place)
             originText = ss1.toString()
             if (!ss1.isNullOrBlank())
-            binding.originPoint.text = ss1.toString()
+                binding.originPoint.text = ss1.toString()
             if (ss != null) {
                 place = Commons.destination
                 getReverseGeocode(ss)
@@ -651,35 +660,35 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
         }
     }
 
-  /*  private fun getDirectionsOsrm() {
-        if (origin == null && destination == null) {
-            showToast("Please select start and end points")
-            return
-        }
+    /*  private fun getDirectionsOsrm() {
+          if (origin == null && destination == null) {
+              showToast("Please select start and end points")
+              return
+          }
 
-        val directionsOptions = DirectionsOptions(
-            DistanceUnit.km,
-            ValhallaLanguages.enMinusUS,
-            DirectionsOptions.DirectionsType.instructions
-        )
-        geoHelper.geoMapsApi?.getDirectionsOsrm(locations = wayList,
-            costing = costingModel,
-            directionsOptions = directionsOptions,
-            costingOptions = costingOptions,
-            onSuccess = { routeResponse ->
+          val directionsOptions = DirectionsOptions(
+              DistanceUnit.km,
+              ValhallaLanguages.enMinusUS,
+              DirectionsOptions.DirectionsType.instructions
+          )
+          geoHelper.geoMapsApi?.getDirectionsOsrm(locations = wayList,
+              costing = costingModel,
+              directionsOptions = directionsOptions,
+              costingOptions = costingOptions,
+              onSuccess = { routeResponse ->
 
-                runOnUiThread {
-                    val gson = Gson()
-                    Log.d("routeResponsess", gson.toJson(routeResponse))
-                    this@TurnNavigationActivity.routeResponse = routeResponse
-                    drawDottedLine()
-                }
+                  runOnUiThread {
+                      val gson = Gson()
+                      Log.d("routeResponsess", gson.toJson(routeResponse))
+                      this@TurnNavigationActivity.routeResponse = routeResponse
+                      drawDottedLine()
+                  }
 
-            },
-            onError = { error ->
-                showToast(error)
-            })
-    }*/
+              },
+              onError = { error ->
+                  showToast(error)
+              })
+      }*/
 
     private fun getDirections() {
         if (origin == null && destination == null) {
@@ -755,7 +764,8 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
 
 
                         symbolManager?.addMarker(
-                            (Point.fromLngLat(wayList[x].lon, wayList[x].lat).toLatLng()), "${x+1}"
+                            (Point.fromLngLat(wayList[x].lon, wayList[x].lat).toLatLng()),
+                            "${x + 1}"
                         )
                         /*if (wayList.size > 2 && x != 0 && x < wayList.size - 1) {
                             style.addImage(
@@ -818,7 +828,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
                 style.addLayer(lineLayer)
 //            style.addLayer(sl)
                 openPopup = sl
-            moveCameraResult()
+                moveCameraResult()
 //                flyCameraToBounds()
             }
         })
@@ -906,8 +916,14 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
                             binding.originPoint.text = label.toString()
                         } else if (place == Commons.destination) {
                             binding.destinationPoint.text = label.toString()
-                        }else if (place == Commons.wayPoint) {
-                            if (wayPoints.isEmpty()) wayPoints.add(WayPintData(label.toString(), latLng, 0))
+                        } else if (place == Commons.wayPoint) {
+                            if (wayPoints.isEmpty()) wayPoints.add(
+                                WayPintData(
+                                    label.toString(),
+                                    latLng,
+                                    0
+                                )
+                            )
                             else wayPoints.add(WayPintData(label.toString(), latLng, wayList.size))
                             binding.recyclerWayPoints.isVisible = true
                             binding.shuffle.isVisible = false
@@ -1012,16 +1028,19 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
                 wayList[0] = RoutingWaypoint(
                     lat = origin!!.latitude(),
                     lon = origin!!.longitude()
-                ) }
+                )
+            }
 
             Commons.destination -> {
                 destination = coordinates.toPoint()
                 binding.destinationPoint.text = description
 
-                wayList.add( RoutingWaypoint(
-                    lat = destination!!.latitude(),
-                    lon = destination!!.longitude()
-                ))
+                wayList.add(
+                    RoutingWaypoint(
+                        lat = destination!!.latitude(),
+                        lon = destination!!.longitude()
+                    )
+                )
             }
 
             Commons.wayPoint -> {
@@ -1080,7 +1099,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             showToast("Please add destination point")
         } else {
             binding.containerNavigation.visibility = View.VISIBLE
-            viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+            viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
             getDirections()
         }
     }
@@ -1111,28 +1130,33 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             R.id.action_shortest -> {
                 shortest = true
                 setCostingOption(costingModel, shortest)
-                viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+                viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
                 getDirections()
                 true
             }
+
             R.id.settings -> {
                 // Handle about action
                 true
             }
+
             R.id.add_stop -> {
                 position = null
                 place = Commons.wayPoint
                 startNewActivity("")
                 true
             }
+
             R.id.show_maneuver -> {
                 showManeuverDialog(routeDistanceResponse?.trip?.legs?.first()?.maneuvers!!)
                 true
             }
+
             R.id.share_location -> {
                 // Handle about action
                 true
             }
+
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -1255,9 +1279,9 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
     }
 
     private fun moveCameraResult() {
-        if (MainActivity.isThreeD){
+        if (MainActivity.isThreeD) {
             enable3DView()
-        }else {
+        } else {
             val latLngBounds = LatLngBounds.Builder()
                 .includes(wayList.map { LatLng(it.lat, it.lon) })
                 .build()
@@ -1276,6 +1300,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
         }
 
     }
+
     private fun calculateZoomLevel(
         latLngBounds: LatLngBounds,
         mapWidth: Int,
@@ -1296,6 +1321,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
             ln(mapHeight / latSpanPixels) / ln(2.0)
         )
     }
+
     private fun clearPolylines() {
 
         map?.getStyle { style ->
@@ -1323,8 +1349,9 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
                 symbolManager = SymbolManager(binding.mapView, map!!, style).apply {
                     iconAllowOverlap = true
                     textAllowOverlap = true
-                }}
-            viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+                }
+            }
+            viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
             getDirections()
         }
         val default: ImageView = view.findViewById(R.id.default_view)
@@ -1337,8 +1364,9 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
                 symbolManager = SymbolManager(binding.mapView, map!!, style).apply {
                     iconAllowOverlap = true
                     textAllowOverlap = true
-                }}
-            viewModel.getDirectionOsrm(costingModel,costingOptions, wayList)
+                }
+            }
+            viewModel.getDirectionOsrm(costingModel, costingOptions, wayList)
             getDirections()
         }
         val traffic: ImageView = view.findViewById(R.id.traffic)
@@ -1377,6 +1405,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
         // Show the Bottom Sheet Dialog
         bottomSheetDialog.show()
     }
+
     private fun enable3DView() {
 
         val newCameraPosition = CameraPosition.Builder()
@@ -1387,6 +1416,7 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
 
         map?.animateCamera(CameraUpdateFactory.newCameraPosition(newCameraPosition), 100)
     }
+
     private fun showManeuverDialog(maneuver: List<RouteManeuver>) {
         val view: View = layoutInflater.inflate(R.layout.layout_maneuvers, null)
 
