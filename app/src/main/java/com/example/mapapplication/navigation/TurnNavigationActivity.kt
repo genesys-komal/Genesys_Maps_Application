@@ -1426,6 +1426,9 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
         val satellite: RecyclerView = view.findViewById(R.id.recycler_maneuver)
         satellite.adapter = maneuverAdapter
         maneuverAdapter.submitList(maneuver)
+        maneuverAdapter.setOnItemClicked {
+
+        }
 
         val close: ImageView = view.findViewById(R.id.close_style)
 
@@ -1437,7 +1440,19 @@ class TurnNavigationActivity : BaseActivity(), OnMapReadyCallback {
         // Show the Bottom Sheet Dialog
         bottomSheetDialog.show()
     }
-
+//    private fun addMarkers() {
+//        routeResponse
+//        val lineString = LineString.fromJson("{your-polyline-geojson-string}")
+//        val beginShapeIndex = 0  // Replace with your actual index
+//        val endShapeIndex = lineString.coordinates().size - 1  // Replace with your actual index
+//
+//        val coordinates = lineString.coordinates()
+//        val startPoint = coordinates[beginShapeIndex]
+//        val endPoint = coordinates[endShapeIndex]
+//
+//        addMarkerAtPoint(startPoint)
+//        addMarkerAtPoint(endPoint)
+//    }
     private fun setupLegend() {
         val legendContainer: LinearLayout = findViewById(R.id.legendContainer)
 

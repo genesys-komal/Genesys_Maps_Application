@@ -24,6 +24,8 @@ class ManeuverAdapter : BaseAdapter<RouteManeuver, ManeuversItemBinding>() {
             tollRoute.isVisible = true
             tollRoute.text = "Toll: Yes"
         }
+        root.setOnClickListener { setOnItemClicked { item } }
+
 
         if (item.time==0.0){
             timeLength.text = "Time: ${item.time} , Length : ${item.length}"
@@ -33,7 +35,7 @@ class ManeuverAdapter : BaseAdapter<RouteManeuver, ManeuversItemBinding>() {
 
 
     }
-    fun convertAndRoundOff(meters: Double): Double {
+    private fun convertAndRoundOff(meters: Double): Double {
         val kilometers = meters / 1000
 
         return String.format("%.2f", meters).toDouble()
