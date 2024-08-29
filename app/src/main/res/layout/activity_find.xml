@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/container"
+tools:context=".activity.FindActivity"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<com.mapbox.mapboxsdk.maps.MapView
+    android:id="@+id/mapView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/container_search"
+    app:maplibre_cameraZoom="12"
+    app:maplibre_enableTilePrefetch="true"
+    app:maplibre_enableZMediaOverlay="true"
+    app:maplibre_renderTextureMode="true"
+    app:maplibre_renderTextureTranslucentSurface="true"
+    app:maplibre_uiAttribution="false"
+    app:maplibre_uiCompass="false"
+    app:maplibre_uiDoubleTapGestures="true"
+    app:maplibre_uiLogo="false"
+    app:maplibre_uiRotateGestures="true"
+    app:maplibre_uiScrollGestures="true"
+    app:maplibre_uiTiltGestures="true"
+    app:maplibre_uiZoomGestures="true" />
+
+
+<LinearLayout
+    android:id="@+id/container_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/backToTurn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <FrameLayout
+            android:id="@+id/container_start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_025"
+            android:layout_marginVertical="@dimen/margin_075"
+            android:background="@drawable/background_search"
+            android:padding="@dimen/margin_075"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/edit_text_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_05"
+                android:background="@null"
+                android:hint="Enter Search Key"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/clearText"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginHorizontal="5dp"
+            app:srcCompat="@drawable/ic_close" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_075"
+        android:background="@drawable/background_map_search"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margin_05"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_search"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_search_suggestion"
+        tools:visibility="visible" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/startRouteLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/rounded_corners"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:visibility="gone">
+
+    <Button
+        android:id="@+id/startRouteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start route"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/clearPoints"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:src="@drawable/ic_delete"
+    android:tint="@android:color/white"
+    android:visibility="gone"
+    app:backgroundTint="@android:color/holo_red_light"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

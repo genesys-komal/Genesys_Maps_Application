@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="@dimen/_20sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/close_style"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_close" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_maneuver"
+        android:layout_width="match_parent"
+
+        android:layout_height="250dp"
+        android:layout_marginStart="@dimen/margin_075"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/margin_075"
+        android:layout_marginBottom="@dimen/margin_075"
+        android:background="@drawable/background_map_search"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margin_05"
+        android:visibility="visible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="4"
+        tools:listitem="@layout/maneuvers_item"
+        tools:visibility="visible" />
+
+</androidx.cardview.widget.CardView>

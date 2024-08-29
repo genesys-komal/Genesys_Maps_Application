@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base configuration for general use -->
+<!--    <domain-config cleartextTrafficPermitted="false">-->
+<!--        <domain includeSubdomains="true">api.genesysmap.com</domain>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="system" />-->
+<!--        </trust-anchors>-->
+<!--    </domain-config>-->
+    <!-- Domain-specific configuration for api.genesysmap.com -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">api.genesysmap.com</domain>
+        <trust-anchors>
+            <!-- Trust only the specific certificate for the domain -->
+            <certificates src="@raw/genesysmapk" />
+        </trust-anchors>
+    </domain-config>
+
+</network-security-config>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_stop"
+        android:title="Add Stop"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/show_maneuver"
+        android:title="Show Maneuver"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_shortest"
+        android:title="Shortest"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/share_location"
+        android:title="Share Location"
+        />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        />
+<!--        android:showAsAction="ifRoom"/>-->
+</menu>
