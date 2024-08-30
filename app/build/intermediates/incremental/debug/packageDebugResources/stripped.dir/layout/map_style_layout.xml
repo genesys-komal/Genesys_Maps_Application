@@ -80,7 +80,7 @@
         android:layout_below="@+id/styleView"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="20dp"
-        android:text="Map Styles" />
+        android:text="Map Details" />
 <LinearLayout
     android:layout_width="match_parent"
     android:orientation="horizontal"

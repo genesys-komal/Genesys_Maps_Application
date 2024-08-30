@@ -1,402 +1,426 @@
 [
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_arrow_back_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_arrow_back_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_restaurant_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_restaurant_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\ic_delete.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_bus.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/bus.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_turn_navigation_activity.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\turn_navigation_activity.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/xml_network_security_config.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/xml/network_security_config.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_fire_truck_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_fire_truck_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_vehicle.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/vehicle.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_ic_navigation.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\ic_navigation.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_navigation_activity.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/navigation_activity.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/raw_cert_two.pem.flat",
-        "source": "com.example.mapapplication.app-main-45:/raw/cert_two.pem"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_directions_bus_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_directions_bus_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_circle_drawable.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/circle_drawable.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_rounded_blue.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\rounded_blue.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_add_box_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_add_box_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\menu_turn_side_menu.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\menu\\turn_side_menu.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_directions_car_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_directions_car_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_transparent_circle.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/transparent_circle.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\raw_genesysmap.key.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\raw\\genesysmap.key"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_maneuvers_item.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/maneuvers_item.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_item_search_suggestion.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\item_search_suggestion.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_default_view.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/default_view.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_maplibre_marker_icon_default.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\maplibre_marker_icon_default.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_ic_search.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/ic_search.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_maneuvers_item.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\maneuvers_item.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_send.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/send.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_walk.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\walk.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_layout_maneuvers.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/layout_maneuvers.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\ic_close.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_walk.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/walk.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_arrow_back_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_arrow_back_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_arrow_outward_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_arrow_outward_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_dots_three_vertical.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\dots_three_vertical.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-xxxhdpi_fullmoon.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-xxxhdpi/fullmoon.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_restaurant_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_restaurant_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/menu_turn_side_menu.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/menu/turn_side_menu.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_circle_drawable.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\circle_drawable.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_default_view.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\default_view.png"
     },
     {
         "merged": "com.example.mapapplication.app-merged_res-43:/layout_map_style_layout.xml.flat",
         "source": "com.example.mapapplication.app-main-45:/layout/map_style_layout.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\xml\\network_security_config.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-ldpi_ic_launcher_foreground.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-ldpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/raw_generated_csr.txt.flat",
-        "source": "com.example.mapapplication.app-main-45:/raw/generated_csr.txt"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\raw_generated_private_key.txt.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\raw\\generated_private_key.txt"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_bottom_sheet_distance.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/bottom_sheet_distance.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-xhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_add_circle_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_add_circle_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-anydpi-v24_fullmoon.xml.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-anydpi-v24/fullmoon.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_house_siding_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_house_siding_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_activity_isochrone.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/activity_isochrone.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_gps_icon.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\gps_icon.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_transparent_ractangle.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/transparent_ractangle.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-anydpi-v24_fullmoon.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-anydpi-v24\\fullmoon.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\ic_search.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_gps_fixed_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_gps_fixed_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_bottom_sheet_distance.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\bottom_sheet_distance.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-mdpi_fullmoon.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-mdpi/fullmoon.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_menu_book_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_menu_book_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_setellite.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/setellite.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_directions_bus_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_directions_bus_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_ractangle_blue.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\ractangle_blue.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_access_time_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_access_time_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\raw_generated_csr.txt.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\raw\\generated_csr.txt"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-xhdpi_fullmoon.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-xhdpi/fullmoon.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-mdpi_fullmoon.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-mdpi\\fullmoon.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/raw_generated_private_key.txt.flat",
-        "source": "com.example.mapapplication.app-main-45:/raw/generated_private_key.txt"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_layers_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_layers_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_activity_main.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/activity_main.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_flatware_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_flatware_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_rounded_blue.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/rounded_blue.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_arrow_outward_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_arrow_outward_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_ic_navigation.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/ic_navigation.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_vehicle.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\vehicle.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/xml_backup_rules.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_gps_fixed_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_gps_fixed_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_custom_alert_dialog.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\custom_alert_dialog.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-hdpi_ic_launcher_foreground.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-hdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_nav_icon.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\nav_icon.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_menu_book_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_menu_book_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_local_hospital_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_local_hospital_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-xxhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_ic_close.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/ic_close.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\raw_cert_three.crt.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\raw\\cert_three.crt"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_traffic.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/traffic.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_add_box_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_add_box_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_background_map_search.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/background_map_search.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_item_waypoint.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\item_waypoint.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/raw_combined.crt.flat",
-        "source": "com.example.mapapplication.app-main-45:/raw/combined.crt"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_category_item.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\category_item.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/raw_genesysmapk.crt.flat",
-        "source": "com.example.mapapplication.app-main-45:/raw/genesysmapk.crt"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\raw_genesysmapk.crt.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\raw\\genesysmapk.crt"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_activity_find.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/activity_find.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_direction.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\direction.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_item_waypoint.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/item_waypoint.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-xxxhdpi_fullmoon.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-xxxhdpi\\fullmoon.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_activity_route.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/activity_route.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-xxhdpi_fullmoon.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-xxhdpi/fullmoon.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_gen_logo.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\gen_logo.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_layers_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_layers_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_setellite.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\setellite.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_maplibre_marker_icon_default.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/maplibre_marker_icon_default.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-hdpi_fullmoon.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-hdpi\\fullmoon.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_flatware_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_flatware_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_transparent_ractangle.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\transparent_ractangle.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_fmd_good_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_fmd_good_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-ldpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_custom_alert_dialog.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/custom_alert_dialog.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_local_hospital_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_local_hospital_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_layout_maneuvers.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\layout_maneuvers.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_dots_three_vertical.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/dots_three_vertical.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_bycicle.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\bycicle.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_activity_splash.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/activity_splash.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\raw_cert_two.pem.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\raw\\cert_two.pem"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_house_siding_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_house_siding_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-mdpi_ic_launcher_foreground.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-mdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_direction.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/direction.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_activity_find.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\activity_find.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_directions_car_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_directions_car_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_ic_delete.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/ic_delete.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_transparent_circle.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\transparent_circle.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_nav_icon.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/nav_icon.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_map_style_layout.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\map_style_layout.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_background_search.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/background_search.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_background_map_search.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\background_map_search.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_item_search_suggestion.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/item_search_suggestion.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_add_circle_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_add_circle_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_bus.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\bus.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_bycicle.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/bycicle.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_activity_base.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\activity_base.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-hdpi_fullmoon.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-hdpi/fullmoon.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_car.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\car.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_settings_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_settings_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_height_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_height_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/raw_genesysmap.key.flat",
-        "source": "com.example.mapapplication.app-main-45:/raw/genesysmap.key"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\raw_cert_one.crt.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\raw\\cert_one.crt"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_ractangle_blue.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/ractangle_blue.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_navigation_activity.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\navigation_activity.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_category_item.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/category_item.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-xhdpi_fullmoon.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-xhdpi\\fullmoon.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/raw_cert_three.crt.flat",
-        "source": "com.example.mapapplication.app-main-45:/raw/cert_three.crt"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_fire_truck_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_fire_truck_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_traffic.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\traffic.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_gen_logo.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/gen_logo.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\raw_combined.crt.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\raw\\combined.crt"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/raw_cert_one.crt.flat",
-        "source": "com.example.mapapplication.app-main-45:/raw/cert_one.crt"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_background_search.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\background_search.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable-ldpi_fullmoon.png.flat",
-        "source": "com.example.mapapplication.app-pngs-39:/drawable-ldpi/fullmoon.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-xxhdpi_fullmoon.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-xxhdpi\\fullmoon.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_car.png.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/car.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_activity_route.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\activity_route.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_turn_navigation_activity.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/turn_navigation_activity.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_height_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_height_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_activity_base.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/activity_base.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_send.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\send.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-ldpi_fullmoon.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-ldpi\\fullmoon.png"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_baseline_settings_24.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/baseline_settings_24.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/layout_add_new_address.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/layout/add_new_address.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_fmd_good_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_fmd_good_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_activity_isochrone.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\activity_isochrone.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable_baseline_access_time_24.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\drawable\\baseline_access_time_24.xml"
     },
     {
-        "merged": "com.example.mapapplication.app-merged_res-43:/drawable_gps_icon.xml.flat",
-        "source": "com.example.mapapplication.app-main-45:/drawable/gps_icon.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\layout_add_new_address.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-main-45:\\layout\\add_new_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-merged_res-43:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.2\\com.example.mapapplication.app-pngs-39:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     }
 ]

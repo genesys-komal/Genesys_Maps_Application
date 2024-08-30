@@ -5,6 +5,7 @@ color blue
 color dark_green
 color green
 color grey
+color ic_launcher_background
 color orange
 color pink
 color red
@@ -204,6 +205,7 @@ layout navigation_activity
 layout turn_navigation_activity
 menu turn_side_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 raw cert_one
 raw cert_three
